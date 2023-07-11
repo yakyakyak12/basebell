@@ -1,3 +1,4 @@
+```sql
 create database metadb;
 use metadb;
 
@@ -65,3 +66,5 @@ insert into player_tb(team_id, player_name, player_position,player_created_at) v
 insert into player_tb(team_id, player_name, player_position,player_created_at) values(1,'박해민','중견수', now());
 
 insert into out_player_tb(player_id, out_player_reason, out_player_created_at) values(2,'은퇴', now());
+
+```

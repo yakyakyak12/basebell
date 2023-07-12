@@ -1,5 +1,17 @@
+import Dao.OutPlayerDao;
+import Dao.PlayerDao;
+
+import java.sql.Connection;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("어떤 기능을 요청하시겠습니까?");
+        Connection connection = db.DBConnection.getInstance();
+
+//        PlayerDao playerDao = new PlayerDao(connection);
+        OutPlayerDao outPlayerDao = new OutPlayerDao(connection);
+
+        outPlayerDao.findAll();
+
+
     }
 }

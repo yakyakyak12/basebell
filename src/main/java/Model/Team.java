@@ -2,11 +2,14 @@ package Model;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import java.sql.Timestamp;
 
-@Getter @ToString
+@Getter
+@ToString
+@Setter
 public class Team {
     private Integer teamId;
     private Integer stadiumId;

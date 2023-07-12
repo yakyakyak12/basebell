@@ -1,25 +1,24 @@
 package Model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 
 import java.sql.Timestamp;
 
 @ToString
 @Getter
+@Setter
 public class OutPlayer {
     private Integer outPlayerId;
     private Integer playerId;
-    private String reason;
-    private Timestamp createdAt;
+    private String outReason;
+    private Timestamp outCreatedAt;
 
     @Builder
-    public OutPlayer(Integer outPlayerId, Integer playerId, String reason, Timestamp createdAt) {
+    public OutPlayer(Integer outPlayerId, Integer PlayerId, String OutPlayerReason, Timestamp outPlayerCreatedAt) {
         this.outPlayerId = outPlayerId;
-        this.playerId = playerId;
-        this.reason = reason;
-        this.createdAt = createdAt;
+        this.playerId = PlayerId;
+        this.outReason = OutPlayerReason;
+        this.outCreatedAt = outPlayerCreatedAt;
     }
 
 }

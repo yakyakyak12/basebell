@@ -1,8 +1,10 @@
 package db;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
+
 public class DBConnection {
-    public static Connection getInstance(){
+    public static Connection getInstance() {
 // MySQL 연결 정보
         String url = "jdbc:mysql://localhost:3306/metadb";
         String username = "root";
@@ -21,9 +23,10 @@ public class DBConnection {
     }
 
     public static void main(String[] args) {
-            getInstance();
+        getInstance();
     }
-    }
+
+}
 
 
 

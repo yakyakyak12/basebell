@@ -14,10 +14,10 @@ public class OutPlayer {
     private Timestamp outCreatedAt;
 
     @Builder
-    public OutPlayer(Integer outPlayerId, Integer PlayerId, String OutPlayerReason, Timestamp outPlayerCreatedAt) {
+    public OutPlayer(Integer outPlayerId, Integer PlayerId, String outPlayerReason, Timestamp outPlayerCreatedAt) {
         this.outPlayerId = outPlayerId;
         this.playerId = PlayerId;
-        this.outReason = OutPlayerReason;
+        this.outReason = outPlayerReason;
         this.outCreatedAt = outPlayerCreatedAt;
     }
 
